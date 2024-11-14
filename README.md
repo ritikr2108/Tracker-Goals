@@ -11,9 +11,10 @@ Responsive Design: A well-designed interface that’s easy to navigate on both d
 
 Project Structure
 
-![image](https://github.com/user-attachments/assets/fa92b6c2-9ed4-4a16-bc68-067946953623)
+![image]![Screenshot 2024-11-15 002420](https://github.com/user-attachments/assets/3544ca66-b2d1-4472-b304-308aef3f184e)
 
 Tech Stack
+
 React with Vite for a fast and efficient development experience
 Context API for state management, providing a consistent task management experience
 CSS Modules for scoped, maintainable styling
@@ -45,12 +46,14 @@ Screenshots:
 
 The main page:
 
-![image](https://github.com/user-attachments/assets/bd666bb2-201f-48c5-b834-e050903739b6)
+![image]![Screenshot 2024-11-15 005848](https://github.com/user-attachments/assets/3264f04e-73a0-48c0-99f8-ccc9c2e89029)
 
 The search functionality:
 
-![image](https://github.com/user-attachments/assets/2c73e3be-e553-4c1b-9373-ee496b372503)
+![image]![Screenshot 2024-11-15 010241](https://github.com/user-attachments/assets/b4748d92-ca69-48dc-ac6b-2d02e877812d)
+
 
 The label search using priority:
 
-![image](https://github.com/user-attachments/assets/fbc0d68d-d06c-4e6a-8f1c-f14802a6c172)
+![image]]![Screenshot 2024-11-15 010241](https://github.com/user-attachments/assets/fe49bab0-9194-4795-8c27-ad6fa5125d78)
+
