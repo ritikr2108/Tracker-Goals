@@ -1,6 +1,6 @@
-Taskify - Task Management App
+Tracker-Goals.
 
-Taskify is a sleek, intuitive task management app built with React and Vite. It enables users to effortlessly create, edit, delete, search, and filter tasks based on priority levels. With an organized structure and a user-friendly interface, Taskify makes it easy to manage daily tasks and improve productivity.
+Tracker-Goals is made for the purpose of Task Management. This application helps users to manage (create,edit,delete,search) their tasks. Here user can filter taks based on priority levels with an organized structure and a user-friendly interface.
 
 Features
 Create, Edit, Delete Tasks: Add new tasks, update existing ones, or remove tasks as needed.
@@ -13,7 +13,6 @@ Project Structure
 
 ![image](https://github.com/user-attachments/assets/fa92b6c2-9ed4-4a16-bc68-067946953623)
 
-
 Tech Stack
 React with Vite for a fast and efficient development experience
 Context API for state management, providing a consistent task management experience
@@ -25,16 +24,13 @@ Ensure you have Node.js installed, along with npm or yarn.
 
 Installation
 
-1.
-  git clone https://github.com/yourusername/taskify.git
-  
-  cd taskify 
+1.  git clone https://github.com/yourusername/Tracker-Goals
 
-3. 
-   npm install
+    cd taskify
 
-4. 
-   npm run dev
+2.  npm install
+
+3.  npm run dev
 
 Usage
 Add Tasks: Use the form to create tasks with titles, descriptions, and assign priority levels.
@@ -43,8 +39,7 @@ Search Tasks: Enter keywords in the search bar to locate tasks by title.
 Filter by Priority: Use the priority dropdown to filter tasks and focus on high, medium, or low-priority items.
 
 Contributing
-We welcome contributions to Taskify! If you have suggestions, bug reports, or want to add new features, please open an issue or submit a pull request.
-
+We welcome contributions to Tracker-Goals If you have suggestions, bug reports, or want to add new features, please open an issue or submit a pull request.
 
 Screenshots:
 
@@ -59,7 +54,3 @@ The search functionality:
 The label search using priority:
 
 ![image](https://github.com/user-attachments/assets/fbc0d68d-d06c-4e6a-8f1c-f14802a6c172)
-
-
-
-
