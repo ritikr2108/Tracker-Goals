@@ -1,0 +1,20 @@
+/* index.css */
+
+/* Tailwind Base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles for <select> and <option> */
+select {
+  background-color: #f7f7f7 !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 0.5rem !important;
+}
+
+option {
+  background-color: #f0f0f0 !important;
+  color: #333 !important;
+}

@@ -1,0 +1,226 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* Base styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* App.css */
+.search-bar {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.filters select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Updated Todo item section styles */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Specific styles for the different states */
+.upcoming {
+  background-color: rgba(255, 255, 0, 0.1); /* very light yellow */
+  border: 1px solid rgba(255, 255, 0, 0.3);
+}
+
+.overdue {
+  background-color: rgba(255, 0, 0, 0.1); /* very light red */
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.completed {
+  background-color: rgba(0, 255, 0, 0.1); /* very light green */
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+/* Apply padding and margin to reduce size */
+.todo-item {
+  padding: 1.5em;
+  margin: 0.5em;
+  border-radius: 0.75em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.todo-item input,
+.todo-item textarea,
+.todo-item select {
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.todo-item input:read-only,
+.todo-item textarea:read-only {
+  background-color: transparent;
+}
+
+/* Position edit and delete buttons at best place */
+.todo-item button {
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.todo-item button:disabled {
+  opacity: 0.5;
+}
+
+.todo-item button:first-child {
+  background-color: #f0f0f0;
+  margin-right: 0.5em;
+}
+
+.todo-item button:last-child {
+  background-color: #ff4d4d;
+}
+
+.todo-item button:hover {
+  opacity: 0.8;
+}
+
+/* Text styles for clear visibility */
+.todo-item input,
+.todo-item textarea,
+.todo-item select {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.todo-item.completed input,
+.todo-item.completed textarea {
+  text-decoration: line-through;
+}
+
+.todo-item input,
+.todo-item textarea {
+  font-size: 1.1rem;
+  padding: 0.8rem;
+}
+
+.todo-item.completed .todo-title,
+.todo-item.completed .todo-description {
+  text-decoration: line-through;
+}
+
+/* Section headers styles */
+h2 {
+  margin-top: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.space-y-4 {
+  margin-bottom: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todo-item {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .todo-item button {
+    padding: 0.3em;
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
