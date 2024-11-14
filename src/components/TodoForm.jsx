@@ -25,19 +25,19 @@ function TodoForm() {
       <input
         type="text"
         placeholder="Task Title"
-        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
+         className="w-full p-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
         placeholder="Task Description"
-        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
+         className="w-full p-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
       <input
         type="date"
-        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
+         className="w-full p-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={dueDate}
         onChange={(e) => setDueDate(e.target.value)}
       />
