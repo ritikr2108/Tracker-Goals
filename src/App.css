@@ -41,154 +41,158 @@
   color: #888;
 } */
 
-
 /* Base styles */
+/* Container styles */
 #root {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo styles */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 5em;
+  padding: 1em;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 1em #333);
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 1em #ff7e67);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1em #00d8ff);
 }
 
-/* App.css */
+/* Search bar */
 .search-bar {
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: none;
+  background-color: #e8e8e8;
+  font-size: 1rem;
 }
 
+/* Filters */
 .filters select {
-  margin-right: 1rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 8px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  margin-right: 1rem;
+  border: none;
 }
 
-
-
+/* Animation for logo */
 @keyframes logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 15s linear;
   }
 }
 
-/* Updated Todo item section styles */
+/* Card styles */
 .card {
-  padding: 2em;
+  padding: 2.5em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #555;
 }
 
-/* Specific styles for the different states */
+/* Todo item states */
 .upcoming {
-  background-color: rgba(255, 255, 0, 0.1); /* very light yellow */
-  border: 1px solid rgba(255, 255, 0, 0.3);
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
 }
 
 .overdue {
-  background-color: rgba(255, 0, 0, 0.1); /* very light red */
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  background-color: #ffe6e6;
+  border-left: 4px solid #ff3b3b;
 }
 
 .completed {
-  background-color: rgba(0, 255, 0, 0.1); /* very light green */
-  border: 1px solid rgba(0, 255, 0, 0.3);
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
 }
 
-/* Apply padding and margin to reduce size */
+/* Todo item general styles */
 .todo-item {
-  padding: 1.5em;
-  margin: 0.5em;
-  border-radius: 0.75em;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .todo-item input,
 .todo-item textarea,
 .todo-item select {
   width: 100%;
-  border-radius: 0.5em;
-  padding: 0.5em;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background-color: #f1f1f1;
 }
 
 .todo-item input:read-only,
 .todo-item textarea:read-only {
-  background-color: transparent;
+  background-color: #fafafa;
 }
 
-/* Position edit and delete buttons at best place */
 .todo-item button {
-  margin-top: 0.5em;
-  border-radius: 0.5em;
-  padding: 0.5em;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
   cursor: pointer;
-}
-
-.todo-item button:disabled {
-  opacity: 0.5;
+  transition: background-color 0.3s ease;
 }
 
 .todo-item button:first-child {
-  background-color: #f0f0f0;
+  background-color: #e0e0e0;
+  color: #333;
   margin-right: 0.5em;
 }
 
 .todo-item button:last-child {
-  background-color: #ff4d4d;
+  background-color: #ff5252;
+  color: #fff;
 }
 
 .todo-item button:hover {
-  opacity: 0.8;
+  filter: brightness(0.9);
 }
 
-/* Text styles for clear visibility */
+/* Text styles */
 .todo-item input,
-.todo-item textarea,
-.todo-item select {
+.todo-item textarea {
   font-size: 1rem;
-  font-weight: 400;
+  color: #333;
 }
 
 .todo-item.completed input,
 .todo-item.completed textarea {
   text-decoration: line-through;
-}
-
-.todo-item input,
-.todo-item textarea {
-  font-size: 1.1rem;
-  padding: 0.8rem;
+  color: #888;
 }
 
 .todo-item.completed .todo-title,
@@ -196,28 +200,34 @@
   text-decoration: line-through;
 }
 
-/* Section headers styles */
+/* Section headers */
 h2 {
-  margin-top: 2em;
-  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  text-align: left;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
+/* Spacing utility */
 .space-y-4 {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
+
   .todo-item {
     padding: 1rem;
-    margin: 0.5rem;
   }
 
   .todo-item button {
-    padding: 0.3em;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0.5em;
   }
 
   h2 {

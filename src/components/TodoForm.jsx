@@ -10,43 +10,41 @@ function TodoForm() {
 
   const add = (e) => {
     e.preventDefault();
-
     if (!title || !description || !dueDate) return;
 
     addTodo({ title, description, completed: false, dueDate, priority });
     setTitle("");
     setDescription("");
     setDueDate("");
-    console.log(title);
-    console.log(description);
-    console.log(dueDate);
+    setPriority("Medium");
   };
 
   return (
-    <form onSubmit={add} className="flex flex-col gap-4">
+    <form onSubmit={add} className="flex flex-col gap-5 p-6 bg-white shadow-lg rounded-lg border border-gray-200 max-w-md mx-auto">
+      <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Add New Task</h3>
       <input
         type="text"
         placeholder="Task Title"
-        className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
         placeholder="Task Description"
-        className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
       <input
         type="date"
-        className="border border-black/10 rounded-lg bg-white/20 px-3 py-1.5"
+        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
         value={dueDate}
         onChange={(e) => setDueDate(e.target.value)}
       />
       <select
         value={priority}
         onChange={(e) => setPriority(e.target.value)}
-        className="border border-black/10 rounded-lg bg-white/20 px-3 py-1.5"
+        className="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 outline-none transition-all duration-150"
       >
         <option value="High">High</option>
         <option value="Medium">Medium</option>
@@ -54,9 +52,9 @@ function TodoForm() {
       </select>
       <button
         type="submit"
-        className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0"
+        className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold transition-all duration-150 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300"
       >
-        Add
+        Add Task
       </button>
     </form>
   );
