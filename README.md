@@ -55,5 +55,4 @@ The search functionality:
 
 The label search using priority:
 
-![image]]![Screenshot 2024-11-15 010241](https://github.com/user-attachments/assets/fe49bab0-9194-4795-8c27-ad6fa5125d78)
-
+![image]]!![Screenshot 2024-11-15 010402](https://github.com/user-attachments/assets/231dd298-c1df-4914-8cf7-5aa4e2e5f681)
